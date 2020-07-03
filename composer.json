@@ -1,0 +1,13 @@
+{
+
+    "autoload": {
+        "psr-4": {
+            "Sparav\\Vpn\\": "src"
+        }
+    },
+    "name": "sparav/vpn",
+    "description": "Sparav VPN Api",
+    "type": "MIT",
+    "license": "MIT",
+    "minimum-stability": "stable"
+}
