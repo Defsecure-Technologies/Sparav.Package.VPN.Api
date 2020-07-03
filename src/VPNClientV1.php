@@ -14,7 +14,7 @@ class VPNClientV1
      * @param string $device_id
      * @return mixed
      */
-    public function regions(string $type, string $lang, bool $region_ip, string $device_id)
+    public function regions(?string $type, ?string $lang, ?bool $region_ip, ?string $device_id)
     {
         $response = Http::timeout(15)
             ->withBasicAuth(env('SPARAV_VPN_API_AUTH_USERNAME'), env('SPARAV_VPN_API_AUTH_PASSWORD'))
