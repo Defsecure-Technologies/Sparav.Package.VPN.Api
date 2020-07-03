@@ -15,7 +15,7 @@ class VPNClientV1
     public function regions(string $type, string $lang, bool $region_ip, string $device_id)
     {
         $response = Http::timeout(15)
-            ->withBasicAuth(env('SPARAV_CUSTOMER_API_AUTH_USERNAME'), env('SPARAV_CUSTOMER_API_AUTH_PASSWORD'))
+            ->withBasicAuth(env('SPARAV_VPN_API_AUTH_USERNAME'), env('SPARAV_VPN_API_AUTH_PASSWORD'))
             ->get('https://sparavvpnapiprod.azurewebsites.net/api/v1/regions',  [
                 'type' => $type,
                 'lang' => $lang,
